@@ -177,13 +177,13 @@ body {
 
 .about h3 {
   color: #fff;
-  font-size: 6rem;
+  font-size: 4rem;
   font-style: italic;
   margin-bottom: 0.6rem;
 }
 
 .about p {
-  color: #fff;
+  color: hsl(0, 0%, 100%);
   font-size: 1.3rem;
 }
 
@@ -196,7 +196,7 @@ body {
 .about .img-card img {
   display: inline-block;
   margin: 2rem 1.2rem;
-  width: 280px;
+  width: 220px;
   border-radius: 20%;
 }
 
@@ -220,7 +220,7 @@ body {
 
 .card h2 {
   font-family: "Dancing Script";
-  padding-top: 4rem;
+  padding-top: 3rem;
   margin-bottom: 1.5rem;
   font-size: 4rem;
 }
@@ -300,6 +300,32 @@ footer .credit p span {
 @media (max-width: 1366px) {
   html {
     font-size: 75%;
+  }
+}
+
+@media (max-width: 820px) {
+  .about h2 {
+    font-size: 5rem;
+    padding-top: 3rem;
+  }
+
+  .about h3 {
+    font-size: 4.7rem;
+    margin-top: 5rem;
+  }
+
+  .about p {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+
+  .about .img-card img {
+    margin-top: 3rem;
+    width: 300px;
+  }
+
+  .about p.tanggal {
+    font-size: 2.4rem;
   }
 }
 
