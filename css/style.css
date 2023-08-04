@@ -1,0 +1,438 @@
+:root {
+  --bg: #000;
+  --darker: #ff968a;
+  --primary: #fcb9aa;
+  --white: #fff;
+  --peach: #ffdbcc;
+  --grey: #eceae4;
+  --cyan: #a2e1db;
+  --green: #55cbcd;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  background-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+/* navbar section */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  align-items: center;
+  background-color: var(--primary);
+  padding: 1.4rem 7%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo p {
+  font-size: 1.5rem;
+  color: var(--white);
+  font-weight: 700;
+  font-style: italic;
+}
+
+.navbar .navbar-nav {
+  padding-right: 6.8rem;
+}
+
+.navbar .navbar-nav a {
+  color: var(--white);
+  display: inline-block;
+  margin: 0 1rem;
+  font-size: 1.09rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--darker);
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--cyan);
+  transform: scaleX(0);
+  transition: 0.1s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0 0.3rem;
+}
+
+.navbar .navbar-extra .heart {
+  color: #fff;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+  transform: scale();
+}
+
+.navbar .navbar-extra .heart:hover {
+  transform: scale(1.5);
+}
+
+.navbar .navbar-extra a:hover {
+  color: #a2e1db;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+/* navbar end */
+
+/* hero start */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../img/konfeti.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero h1 {
+  display: flex;
+  font-size: 6rem;
+  color: #fff;
+  margin-left: 4rem;
+  text-shadow: 1px 1px 3px var(--bg);
+  line-height: 1.2;
+}
+
+.hero h2 {
+  display: flex;
+  font-weight: 400;
+  margin-left: 4rem;
+  color: #fff;
+  text-shadow: 1px 1px 2px var(--bg);
+  line-height: 1.2;
+  margin-right: 2rem;
+}
+
+.hero h2 .heart {
+  margin-left: 1rem;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  bottom: 0;
+}
+/* hero end */
+
+/* about start */
+.about {
+  background-color: rgb(61, 201, 206);
+  padding: 8rem 7% 4rem;
+  height: 100vh;
+  text-align: justify;
+}
+
+.about::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 19%;
+  bottom: 0;
+  background: linear-gradient(
+    180deg,
+    rgb(50, 110, 133) 4%,
+    rgba(27, 56, 92, 0) 25%
+  );
+}
+
+.about h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.about h3 {
+  color: #fff;
+  font-size: 6rem;
+  font-style: italic;
+  margin-bottom: 0.6rem;
+}
+
+.about p {
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.about .img-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.about .img-card img {
+  display: inline-block;
+  margin: 2rem 1.2rem;
+  width: 280px;
+  border-radius: 20%;
+}
+
+.about .img-card p {
+  font-size: 1.5rem;
+}
+
+.about .img-card .img {
+  display: flex;
+  justify-content: center;
+}
+/* about end */
+
+/* card start */
+.card {
+  height: 100vh;
+  background-color: var(--grey);
+  padding: 20rem;
+  text-align: center;
+}
+
+.card h2 {
+  font-family: "Dancing Script";
+  padding-top: 4rem;
+  margin-bottom: 1.5rem;
+  font-size: 4rem;
+}
+
+.card span {
+  color: var(--darker);
+  text-shadow: 1px 1px 1px var(--bg);
+}
+
+.card .btn {
+  border-radius: 4.5rem 1rem;
+  padding: 1rem 2.4rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #000;
+  background-color: var(--primary);
+  cursor: pointer;
+}
+
+.card .btn:hover {
+  background-color: #ff968a;
+  color: #fff;
+  transition: 0.13s;
+  text-shadow: 1px 1.2px 1px var(--bg);
+  box-shadow: 1px 1.5px 1px var(--bg);
+}
+/* card end */
+
+/* footer start */
+footer {
+  padding: 2rem 0 3rem;
+  background-color: var(--primary);
+  text-align: center;
+}
+
+footer .social {
+  padding: 0.6rem;
+}
+
+footer .social a {
+  display: inline-block;
+  color: #fff;
+  margin: 1rem 2rem;
+  size: 6%;
+}
+
+footer .links {
+  padding: 0.6rem;
+}
+footer .links a {
+  color: #fff;
+  padding: 0.7rem 1rem;
+  font-size: 1.2rem;
+}
+
+footer .social a:hover,
+footer .links a:hover {
+  color: var(--darker);
+}
+
+footer .credit {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+footer .credit p {
+  color: #fff;
+}
+
+footer .credit p span {
+  color: var(--bg);
+  font-weight: 700;
+}
+/* footer end */
+
+/* media queries */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .navbar .navbar-nav .cross {
+    display: block;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar {
+    position: fixed;
+    z-index: 9999;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: var(--green);
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: var(--bg);
+    display: block;
+    color: #fff;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .hero a {
+    text-align: center;
+  }
+
+  .about {
+    padding-top: 14rem;
+    text-align: justify;
+  }
+
+  .about h2 {
+    font-size: 4.6rem;
+  }
+
+  .about h3 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  .about p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .about .img-card img {
+    size: 40%;
+    margin-bottom: 2rem;
+  }
+
+  .card {
+    padding-top: 37.6rem;
+  }
+
+  .card h2 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  .card .btn {
+    width: 18rem;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .navbar {
+    position: fixed;
+    z-index: 9999;
+  }
+
+  .about h2 {
+    margin-bottom: 4.5rem;
+    font-size: 3rem;
+  }
+
+  .about h3 {
+    margin-bottom: 1.5rem;
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .about p {
+    margin-bottom: 1.2rem;
+    font-size: 2rem;
+    text-align: justify;
+  }
+
+  .about .img-card img {
+    width: 42%;
+    margin-bottom: 1.5rem;
+  }
+
+  .about .img-card p {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  .card {
+    text-align: center;
+    font-size: 1rem;
+    padding: 0;
+    padding-top: 29.5rem;
+  }
+}
